@@ -15,21 +15,6 @@ An AI-powered resume screening web application that compares candidate resumes a
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="assets/screenshot-upload.png" width="500" />
-  <br/>
-  <em>Upload Page</em>
-</p>
-
-<p align="center">
-  <img src="assets/screenshot-result.png" width="500" />
-  <br/>
-  <em>Match Result Page</em>
-</p>
-
----
 
 ## 🧰 Tech Stack
 
@@ -85,10 +70,9 @@ NLP-Based-Resume-Screening-Tool/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-├── static/
-│   └── styles.css
-└── assets/
-    └── (screenshots/images)
+└── static/
+    └── styles.css
+
 ```
 
 ---

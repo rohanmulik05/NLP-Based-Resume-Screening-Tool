@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Match Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <h2>Screening Results</h2>
+    <p><strong>Semantic Similarity Score:</strong> {{ semantic_score }}%</p>
+    <p><strong>Keyword Match Score:</strong> {{ keyword_score }}%</p>
+    <p><strong>Final Weighted Score:</strong> {{ final_score }}%</p>
+
+    <h3>Resume Keywords</h3>
+    <ul>{% for kw in resume_keywords %}<li>{{ kw }}</li>{% endfor %}</ul>
+
+    <h3>Job Description Keywords</h3>
+    <ul>{% for kw in job_keywords %}<li>{{ kw }}</li>{% endfor %}</ul>
+
+    <a class="button" href="/">⟵ Try Another Match</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Resume Screening</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Resume & JD</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <label for="resume">Resume (PDF)</label>
+      <input type="file" name="resume" required>
+
+      <label for="job">Job Description (PDF)</label>
+      <input type="file" name="job" required>
+
+      <button type="submit">Match Now</button>
+    </form>
+  </div>
+</body>
+</html>
